@@ -1,0 +1,44 @@
+{
+  "friend": [
+    {
+      "name": "iron man",
+      "message": "아이 엠 아이언맨",
+      "img": "img/아연맨.jpg"
+    },
+    {
+      "name": "black widow",
+      "message": "잠수중",
+      "img": "img/블랙위도우.jpg"
+    },
+    {
+      "name": "thor",
+      "message": "대장장이",
+      "img": "img/토르.jpg"
+    },
+    {
+      "name": "hulk",
+      "message": "화가 많은 남자",
+      "img": "img/헐크.jpg"
+    },
+    {
+      "name": "captain america",
+      "message": "바른 사나이",
+      "img": "img/캡아.png"
+    },
+    {
+      "name": "spider man",
+      "message": "거미 인간",
+      "img": "img/스파이더맨.jpg"
+    },
+    {
+      "name": "dr strange",
+      "message": "평행 우주론",
+      "img": "img/닥스.jpg"
+    },
+    {
+      "name": "신사임당",
+      "message": "5만원권 주인공",
+      "img": "img/신사임당.jpg"
+    }
+  ]
+}

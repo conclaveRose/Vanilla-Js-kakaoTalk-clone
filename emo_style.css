@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+header {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.233);
+  padding: 1rem;
+  flex-basis: 10%;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+}
+
+.container .navBar {
+  border-right: 1px solid rgba(128, 128, 128, 0.199);
+  background: rgba(128, 128, 128, 0.26);
+  width: 10rem;
+  padding-top: 2rem;
+}
+
+.container .navBar li {
+  padding: 1rem 1rem;
+}
+
+.container .content {
+  flex: 1;
+}
+
+.select {
+  background: rgba(128, 128, 128, 0.24);
+}

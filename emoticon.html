@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="kor">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>emoticon</title>
+    <link rel="stylesheet" href="emo_style.css" />
+  </head>
+  <body>
+    <section>
+      <header>
+        <h1>이모티콘</h1>
+      </header>
+      <div class="container">
+        <ul class="navBar">
+          <li>신규</li>
+          <li>인기</li>
+          <li>스타일</li>
+          <li>검색</li>
+          <li>좋아요</li>
+        </ul>
+        <div class="content">
+          <aside>aside(광고)</aside>
+          <main>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </main>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // selector
+      const navBar = document.querySelector(".navBar");
+
+      // addEventListener
+
+      //화면이 로딩되면 실행되는 이벤트함수
+      document.addEventListener("DOMContentLoaded", () => {
+        const li = navBar.querySelector("li:nth-child(2)");
+        li.classList.add("select");
+      });
+
+      //네비 항목을 클릭했을 시 발생하는 이벤트핸들러
+      navBar.addEventListener("click", (event) => {
+        const li = event.target;
+        if (li.parentNode.className == "navBar") {
+          doSelectList(li);
+        }
+      });
+
+      //   function
+      function doSelectList(e) {
+        const arr = navBar.children;
+        for (let i = 0; i < arr.length; i++) {
+          const element = arr[i];
+          element.classList = "";
+        }
+        e.classList.add("select");
+      }
+    </script>
+  </body>
+</html>

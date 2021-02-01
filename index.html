@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="kor">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kakaoTalk CloneCoding</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/7325f4a1e0.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js" defer></script>
+    <script src="setData.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <section>
+        <div class="nav_bar">
+          <ul>
+            <li><i class="fas fa-user" title="친구"></i></li>
+            <li><i class="fas fa-comment" title="채팅"></i></li>
+            <li><i class="fas fa-ellipsis-h" title="더보기"></i></li>
+          </ul>
+          <ul>
+            <li><i class="far fa-smile-beam" title="카카오 이모티콘샵"></i></li>
+            <li><i class="far fa-bell" title="알림"></i></li>
+            <li><i class="fas fa-cog" title="설정"></i></li>
+          </ul>
+          <ul id="setting">
+            <li>설정</li>
+            <li>잠금모드</li>
+            <li>로그아웃</li>
+            <li>종료</li>
+          </ul>
+        </div>
+        <div class="content">
+          <div class="content_header">
+            <div>
+              <h1>친구</h1>
+              <ul class="search">
+                <li><i class="fas fa-search" title="통합검색"></i></li>
+                <li><i class="fas fa-user-plus" title="친구추가"></i></li>
+              </ul>
+            </div>
+            <div class="search_toggle">
+              <form>
+                <button type="submit"><i class="fas fa-search"></i></button>
+                <input type="text" placeholder="이름 검색" />
+                <button type="submit">통합검색</button>
+              </form>
+              <button class="search_Delete" title="닫기">
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+          </div>
+          <ul class="main">
+            <li>
+              <button><i class="fas fa-user"></i></button>
+              <p>User</p>
+            </li>
+            <li>
+              <div>
+                <p>생일인 친구</p>
+                <i class="fas fa-angle-up"></i>
+              </div>
+              <div>
+                <button><i class="fas fa-birthday-cake"></i></button>
+                <p>친구의 생일을 확인해보세요!</p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <p>채널</p>
+                <i class="fas fa-angle-up"></i>
+              </div>
+              <div>
+                <button><i class="fab fa-stack-exchange"></i></button>
+                <p>채널</p>
+              </div>
+            </li>
+            <li class="friends_container">
+              <div>
+                <p>친구</p>
+                <span class="number"></span>
+                <i class="fas fa-angle-up"></i>
+              </div>
+              <ul class="friends_list"></ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="aside"></div>
+      <div class="modal_container">
+        <div class="modal_Overlay"></div>
+        <div class="modal">
+          <header>
+            <div>
+              <i class="fas fa-times"></i>
+            </div>
+            <h2>친구 추가</h2>
+            <ul>
+              <li>연락처로 추가</li>
+              <li>ID로 추가</li>
+            </ul>
+          </header>
+          <main>
+            <div class="search_name">
+              <input type="text" placeholder="친구 이름" />
+              <span>0/20</span>
+            </div>
+            <div class="search_phone">
+              <div>
+                <p>+82</p>
+                <i class="fas fa-angle-down"></i>
+              </div>
+              <input type="text" placeholder="전화번호" />
+              <p>친구의 이름과 전화번호를 입력해주세요</p>
+            </div>
+          </main>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
